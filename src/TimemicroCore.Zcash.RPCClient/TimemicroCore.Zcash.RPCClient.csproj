@@ -1,0 +1,88 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Timemicro.Zcash.RPCClient</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Methods\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Timemicro.Zcash.RPCClient\JsonRPCClient.cs">
+      <Link>JsonRPCClient.cs</Link>
+    </Compile>
+    <Compile Include="..\Timemicro.Zcash.RPCClient\JsonRPCMethods.cs">
+      <Link>JsonRPCMethods.cs</Link>
+    </Compile>
+    <Compile Include="..\Timemicro.Zcash.RPCClient\JsonRPCRequest.cs">
+      <Link>JsonRPCRequest.cs</Link>
+    </Compile>
+    <Compile Include="..\Timemicro.Zcash.RPCClient\JsonRPCRequestParams.cs">
+      <Link>JsonRPCRequestParams.cs</Link>
+    </Compile>
+    <Compile Include="..\Timemicro.Zcash.RPCClient\JsonRPCResponse.cs">
+      <Link>JsonRPCResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\Timemicro.Zcash.RPCClient\JsonRPCResponseError.cs">
+      <Link>JsonRPCResponseError.cs</Link>
+    </Compile>
+    <Compile Include="..\Timemicro.Zcash.RPCClient\JsonRPC.cs">
+      <Link>JsonRPC.cs</Link>
+    </Compile>
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\DumpPrivKeyParams.cs" Link="Methods\DumpPrivKeyParams.cs" />
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\DumpPrivKeyResponse.cs" Link="Methods\DumpPrivKeyResponse.cs" />
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\GetBalanceParams.cs">
+      <Link>Methods\GetBalanceParams.cs</Link>
+    </Compile>
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\GetBalanceResponse.cs">
+      <Link>Methods\GetBalanceResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\GetBestBlockHashParams.cs">
+      <Link>Methods\GetBestBlockHashParams.cs</Link>
+    </Compile>
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\GetBestBlockHashResponse.cs">
+      <Link>Methods\GetBestBlockHashResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\GetBlockHashParams.cs" Link="Methods\GetBlockHashParams.cs" />
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\GetBlockHashResponse.cs" Link="Methods\GetBlockHashResponse.cs" />
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\GetBlockParams.cs" Link="Methods\GetBlockParams.cs" />
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\GetNewAddressParams.cs">
+      <Link>Methods\GetNewAddressParams.cs</Link>
+    </Compile>
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\GetNewAddressResponse.cs">
+      <Link>Methods\GetNewAddressResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\GetBlockResponse.cs">
+      <Link>Methods\GetBlockResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\GetChainTipsParams.cs">
+      <Link>Methods\GetChainTipsParams.cs</Link>
+    </Compile>
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\GetChainTipsResponse.cs">
+      <Link>Methods\GetChainTipsResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\GetRawTransactionParams.cs" Link="Methods\GetRawTransactionParams.cs" />
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\GetRawTransactionResponse.cs" Link="Methods\GetRawTransactionResponse.cs" />
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\GetTransactionParams.cs" Link="Methods\GetTransactionParams.cs" />
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\GetTransactionResponse.cs" Link="Methods\GetTransactionResponse.cs" />
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\GetWalletInfoParams.cs" Link="Methods\GetWalletInfoParams.cs" />
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\GetWalletInfoResponse.cs" Link="Methods\GetWalletInfoResponse.cs" />
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\ListTransactionsParams.cs" Link="Methods\ListTransactionsParams.cs" />
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\ListTransactionsResponse.cs" Link="Methods\ListTransactionsResponse.cs" />
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\ListUnspentParams.cs" Link="Methods\ListUnspentParams.cs" />
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\ListUnspentResponse.cs" Link="Methods\ListUnspentResponse.cs" />
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\SendManyParams.cs" Link="Methods\SendManyParams.cs" />
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\SendManyResponse.cs" Link="Methods\SendManyResponse.cs" />
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\SetTxFeeParams.cs" Link="Methods\SetTxFeeParams.cs" />
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\SetTxFeeResponse.cs" Link="Methods\SetTxFeeResponse.cs" />
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\WalletPassphraseParams.cs" Link="Methods\WalletPassphraseParams.cs" />
+    <Compile Include="..\Timemicro.Zcash.RPCClient\Methods\WalletPassphraseResponse.cs" Link="Methods\WalletPassphraseResponse.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
+</Project>
