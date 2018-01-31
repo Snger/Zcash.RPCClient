@@ -16,6 +16,19 @@ namespace Timemicro.Zcash.RPCClient
 
         private string rpcpassword;
 
+        public string WalletPassphrase { get; }
+
+        public JsonRPCClient(string rpcurl
+            , string rpcuser
+            , string rpcpassword
+            , string walletPassphrase)
+        {
+            this.rpcurl = rpcurl;
+            this.rpcuser = rpcuser;
+            this.rpcpassword = rpcpassword;
+            WalletPassphrase = walletPassphrase;
+        }
+
         public JsonRPCClient(string rpcurl, string rpcuser, string rpcpassword)
         {
             this.rpcurl = rpcurl;
